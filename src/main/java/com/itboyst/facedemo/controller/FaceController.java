@@ -80,7 +80,7 @@ public class FaceController {
             userFaceInfo.setName(name);
             userFaceInfo.setGroupId(groupId);
             userFaceInfo.setFaceFeature(bytes);
-            userFaceInfo.setFaceId(RandomUtil.randomString(10));
+            userFaceInfo.setFaceId(RandomUtil.randomString(10));    // 产生10位长度的随机数
 
             //人脸特征插入到数据库
             userFaceInfoService.insertSelective(userFaceInfo);
