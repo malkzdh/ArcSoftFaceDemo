@@ -6,27 +6,17 @@ import java.util.Date;
 
 public class UserFaceInfo {
 
-        private Integer id;
-
-        private Integer groupId;
-
-        private String faceId;
-
-        private String name;
-
-        private Integer age;
-
-        private String email;
-
-        private Short gender;
-
-        private String phoneNumber;
-
-        private Date createTime;
-
-        private Date updateTime;
-
-        private byte[] faceFeature;
+        private Integer id;             // 主键
+        private Integer groupId;        // 分组id
+        private String faceId;          // 人脸唯一Id
+        private String name;            // 名字
+        private Integer age;            // 年纪
+        private String email;           // 邮箱地址
+        private Short gender;           // 性别，1=男，2=女
+        private String phoneNumber;     // 电话号码
+        private Date createTime;        // 创建时间
+        private Date updateTime;        // 更新时间
+        private byte[] faceFeature;     // 特征值
 
         public Integer getId() {
             return id;
